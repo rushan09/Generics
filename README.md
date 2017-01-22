@@ -8,14 +8,15 @@ This repository covers basics of java generics, Unit test, Exceptions and creati
 -----------------------------------------
 
 ####Example annotaions in unit test
-
-*BeforClass 1
-*Before 2
-*@Test 2
+```
+*@BeforClass
+*@Before
+*@Test
 *@After
 *@Before
 *@Test
 *@After
 *@AfterClass
+```
 
 
