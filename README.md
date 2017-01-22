@@ -1,13 +1,21 @@
 # Generics
-Following Pluralsight Java Genericsasd
+Following Pluralsight Java Generics
 
 
 ################################
-#This repository covers basics of java generics, Unit test, Exceptions and creating custom exceptions.
+This repository covers basics of java generics, Unit test, Exceptions and creating custom exceptions.
 
 -----------------------------------------
 
 Example annotaions in unit test
 
-sdfsdasdasd
-asdas
+@BeforClass
+@Before
+@Test
+@After
+@Before
+@Test
+@After
+@AfterClass
+
+
