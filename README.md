@@ -1,5 +1,5 @@
 # Generics
-Following Pluralsight Java Generics
+Following Pluralsight Java Generics course
 
 
 ################################
@@ -48,5 +48,17 @@ public void exTest() throws anyexception
 #####We can use try catch in Junit testing
 ```
 @Rule
+public ErrorCollector error = new ErrorCollector();
+
+@Test
+public void exTest()
+{
+  try{
+    //Test goes here
+  }catch(Throwable e)
+   {
+      error.addError(e);
+   }
+}
 ```
 
