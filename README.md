@@ -9,8 +9,8 @@ This repository covers basics of java generics, Unit test, Exceptions and creati
 
 ####Example annotaions in unit test
 
-*@BeforClass 1
-*@Before 2
+*BeforClass 1
+*Before 2
 *@Test 2
 *@After
 *@Before
