@@ -1,5 +1,7 @@
 package com.rush.CircularBuffer;
 
+import com.rush.Exceptions.BufferSizeException;
+
 public class CircularBuffer {
 
 	private Object[] buffer;
@@ -11,11 +13,11 @@ public class CircularBuffer {
 		buffer = new Object[size];
 	}
 	
-	public Boolean offer(Object insert)
+	public Boolean offer(Object insert) throws BufferSizeException
 	{
 		if(buffer[writeCurser]!=null)
 		{
-			return false;
+			throw new BufferSizeException();
 		}
 		buffer[writeCurser]=insert;
 		writeCurser = next(writeCurser);
