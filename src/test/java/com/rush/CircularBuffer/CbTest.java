@@ -43,8 +43,8 @@ public class CbTest {
 	public void offerTest() {
 		System.out.println(" +Running offerTest");
 		try {
-			assertTrue(cbObject.offer(1));
-			assertTrue(cbObject.offer(2));
+			assertTrue(cbObject.offer(1)); //test offering one
+			assertTrue(cbObject.offer(2)); //test offering two
 //			assertFalse(cbObject.offer(3));
 		} catch (BufferSizeException e) {
 			System.out.println(e);
