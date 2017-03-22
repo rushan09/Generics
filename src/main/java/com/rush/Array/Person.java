@@ -27,5 +27,9 @@ public class Person {
 		this.age = age;
 	}
 	
+	public String toString()
+	{
+		return "name: "+ name + ", age: "+ age ;
+	}
 	
 }

@@ -5,29 +5,22 @@ import static org.junit.Assert.assertEquals;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.rush.CircularBuffer.generics.GenericCircularBuffer;
-import com.rush.Exceptions.BufferSizeException;
-
 public class TypeSafeCircularBufferTest {
-	static GenericCircularBuffer<String> circularBuffer;
+	static TypeSafeCircularBuffer circularBuffer;
 	
 	@BeforeClass
 	public static void init()
 	{
-		circularBuffer = new GenericCircularBuffer<String>(5);
+		circularBuffer = new TypeSafeCircularBuffer(3);
 	}
 	
 
 	@Test
 	public void testOffer() {
-		try {
-			assertEquals("Didn't insert properly", true , circularBuffer.offer("a"));
-			assertEquals("Didn't insert properly", true , circularBuffer.offer("b"));
-			assertEquals("Didn't insert properly", true , circularBuffer.offer("cd"));
-		} catch (BufferSizeException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		assertEquals("Didn't insert properly", true , circularBuffer.offer("a"));
+		assertEquals("Didn't insert properly", true , circularBuffer.offer("b"));
+		assertEquals("Didn't insert properly", true , circularBuffer.offer("cd"));
+		assertEquals("Didn't insert properly", false , circularBuffer.offer("e"));
 	}
 
 	@Test
