@@ -1,4 +1,4 @@
-package com.rush.Array;
+package com.rush.collections.Array;
 
 public class Person {
 	/**

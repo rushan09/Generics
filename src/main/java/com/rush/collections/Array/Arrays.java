@@ -1,4 +1,4 @@
-package com.rush.Array;
+package com.rush.collections.Array;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,9 +1,9 @@
-package com.rush.Set;
+package com.rush.collections.Set;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import com.rush.Array.Person;
+import com.rush.collections.Array.Person;
 
 public class Sets {
 	
